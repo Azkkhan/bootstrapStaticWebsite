@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>My Company</title>
+    <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+</head>
+<body style="background:floralwhite">
+<nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+    <div class="container">
+
+        <button class="navbar-toggler " data-target="#Navbar" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="DemoBootsrap.html">
+            <img class="Logo" src="images/B.png" alt="">
+            My Company</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item "><a href="DemoBootsrap.html" class="nav-link" ><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a href="About.html" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" ><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link" ><span class="fa fa-address-book fa-lg"></span> Contact</a></li>
+                </ul>
+            </div>
+    </div>
+</nav>
+<header class="jumbotron row-header">
+    <div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-sm-6">
+                    <h2>Products Coming Soon..</h2>
+                    <p>A Friend in Need a Brand Indeed !</p>
+                 </div>
+                <div class="col-12 col-sm">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./DemoBootsrap.html" style="color:grey">Home</a></li>
+                <li class="breadcrumb-item Active" >Contact us</li>
+            </ol>
+        </div>
+        <div class="row">
+             <div class="col-12 col-sm-12 " style=" text-align:center;">
+                <h2 style="border-bottom:1px ridge;">Contact Us</h2>
+            </div>
+        </div>
+    <div class="row row-content align-items-center" >
+        <div class="col-12 col-sm-6" style="background:yello">
+            <h3>Location Information</h3>
+            <div class="contactUsAddress" >
+                <h5>Our Address</h5>
+                05,High Street,Jorjey Coal Factory,<br>
+                Hassana Manson,6767635<br>
+                Mandasna.<br>
+                <i class="fa fa-phone "></i> Tel:- 878798546<br>
+                <i class="fa fa-envelope"></i> Email:-<a style="color:navy" href="mailto:info@mycompany.com" >info@mycompany.com</a>
+                </div>
+                <div class="col-12 col-sm-11 offset-1">
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" href="tel:+918208193351"><i class="fa fa-phone"></i> Call </a>
+                        <a role="button" class="btn btn-info" href=""><i class="fa fa-skype"></i> Skype </a>
+                        <a role="button" class="btn btn-success" href="mailto:mazeemxyz@gmail.com"><i class="fa fa-envelope"></i> Email </a>
+                    </div>
+                </div>
+        </div>
+        <div class="col-12 col-sm-6 order-sm-last" style="background:pnk">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-12">
+                    <h3>Our Office Location</h3>
+                    <div id="googleMap" style="width:100%;height:300px; padding:10px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-content">
+        <h3>Send us your Feedback</h3>
+        <div class="col-12 col-md-9">
+            <form>
+                <div class="form-group row">
+                    <label for="firstname" class="col-md-2   col-from-label"> First Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastname" class="col-md-2 col-from-label"> Last Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="tellno" class="col-md-2 col-from-label"> Contact</label>
+                    <div class="col-5 col-md-3">
+                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
+                    </div>
+                     <div class="col-7 col-md-7">
+                        <input type="tel" class="form-control" id="tellno" name="tellno" placeholder="Enter Tel. Number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="emailid" class="col-md-2 col-from-label"> Email ID </label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Enter Email ID ">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6 offset-md-2">
+                        <input type="checkbox" id="approve" class="from-check-input" id="checkbox" name="checkbox">
+                        <label for="approve" class="form-check-label"><strong> May we contact you?</strong></label>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        <select class="form-control">
+                            <option id="email">Email</option>
+                            <option id="cell">Cell Phone</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="comment" class="col-md-2 col-form-label">Comment</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="comment" rows="10" placeholder="Enter your Comment"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-10 offset-md-2">
+                        <button onclick="" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-1 col-sm-2" style="background:">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </div>
+            <div class="col-7 col-sm-5 address">
+                <h5>Our Address</h5>
+                <address>
+                    05,High Street,Jorjey Coal Factory,<br>
+                    Hassana Manson,6767635
+                    Mandasna.<br>
+                    <i class="fa fa-phone "></i> Tel:- 878798546<br>
+                    <i class="fa fa-envelope"></i> Email:-<a href="mailto:info@mycompany.com" >info@mycompany.com</a>
+                </address>
+            </div>
+                <div class="col-12 col-sm-4 text-center">
+                    <h5>Connect with Us</h5>
+                    <div>
+                            <a href="http://google.com/"><span class="fa fa-google fa-lg"></span>+ </a>|
+                            <a href="http://facebook.com/"><span class="fa fa-facebook fa-lg"></span> </a>|
+                            <a href="http://twitter.com/"><span class="fa fa-twitter fa-lg"></span> </a>|
+                            <a href="http://gmail.com/"><b style="font-size:20px;"> G </b> <span class="fa fa-envelope fa-lg"></span> </a>|
+                     </div>
+                </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+            <p>All rights Reserved By Me</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
